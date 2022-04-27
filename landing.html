@@ -14,7 +14,60 @@
         <img src="mountains_behind.png" id="mountains_behind">
         <h2 id="text">Hello<span>!</span></h2>
         <a href="#" id="btn">Explore</a>
+        <a href="#" id="about">About</a>
         <img src="mountains_front.png" id="mountains_front.png">
     </section> 
+    <script src="anime.min.js"></script>
+    <script>
+        var animation = anime.timeline({
+            autoplay: false
+        });
+
+        animation
+        .add({
+            targets: '#btn',
+            top: '1500px',
+            duration: 500,
+            easing: 'easeInOutSine',
+        })
+
+        .add({
+            targets: '#stars',
+            top: '0px',
+            duration: 1000,
+            easing: 'easeInOutSine',
+        })
+
+        .add({
+            targets: '#mountains_behind',
+            bottom: '0px',
+            duration: 1000,
+            easing: 'easeInOutSine',
+        })
+
+        .add({
+            targets: '#moon',
+            top: '0px',
+            duration: 1000,
+            easing: 'easeInOutSine',
+        })
+
+        .add({
+            targets: '#text',
+            duration: 1000,
+            marginRight: '0',
+            easing: 'easeInOutSine',
+        })
+
+        .add({
+            targets: '#about',
+            top: '50%',
+            left:'50%',
+            duration: 1000,
+            easing: 'easeInOutSine',
+        })
+
+        document.querySelector('#btn').onclick = animation.play;
+    </script>
 </body>
 </html>
