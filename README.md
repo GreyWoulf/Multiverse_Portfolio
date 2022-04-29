@@ -4,4 +4,4 @@ Welcome to my very first webpage. This was created as part of a project to enhan
 
 I used Open Tutorials youtube page for a good source reference.
 
-*Not all features work right now, but updates will be made soon*
+*Not all features work right now, but updates will be made soon, especially with the media queries*
