@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Multiverse Website Portfolio Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Grey Woulf</a>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li ><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text"></h2>
+            <!-- <a href="#" id="btn">Download CV</a> -->
+            <img src="mountains_front.png" id="mountains_front.png">
+        </section>
+        <div class="sec">
+            <h2>Experience</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Adipisci eos velit at reiciendis doloribus et delectus 
+                sapiente iure eligendi odio, aspernatur numquam deserunt 
+                id harum nostrum voluptas quia quas animi. Lorem ipsum 
+                dolor sit amet consectetur, adipisicing elit. 
+                Accusantium aut ad officia vel! Tempore adipisci debitis 
+                quasi corrupti molestias maiores est molestiae fugit qui 
+                quod ut sit, ipsam magnam unde!<br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Adipisci eos velit at reiciendis doloribus et delectus 
+                sapiente iure eligendi odio, aspernatur numquam deserunt 
+                id harum nostrum voluptas quia quas animi. Lorem ipsum 
+                dolor sit amet consectetur, adipisicing elit. 
+                Accusantium aut ad officia vel! Tempore adipisci debitis 
+                quasi corrupti molestias maiores est molestiae fugit qui 
+                quod ut sit, ipsam magnam unde!Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Adipisci eos velit at reiciendis doloribus et delectus 
+                sapiente iure eligendi odio, aspernatur numquam deserunt 
+                id harum nostrum voluptas quia quas animi. Lorem ipsum 
+                dolor sit amet consectetur, adipisicing elit. 
+                Accusantium aut ad officia vel! Tempore adipisci debitis 
+                quasi corrupti molestias maiores est molestiae fugit qui 
+                quod ut sit, ipsam magnam unde! Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Adipisci eos velit at reiciendis doloribus et delectus 
+                sapiente iure eligendi odio, aspernatur numquam deserunt 
+                id harum nostrum voluptas quia quas animi. Lorem ipsum 
+                dolor sit amet consectetur, adipisicing elit. 
+                Accusantium aut ad officia vel! Tempore adipisci debitis 
+                quasi corrupti molestias maiores est molestiae fugit qui 
+                quod ut sit, ipsam magnam unde!Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Adipisci eos velit at reiciendis doloribus et delectus 
+                sapiente iure eligendi odio, aspernatur numquam deserunt 
+                id harum nostrum voluptas quia quas animi. Lorem ipsum 
+                dolor sit amet consectetur, adipisicing elit. 
+                Accusantium aut ad officia vel! Tempore adipisci debitis 
+                quasi corrupti molestias maiores est molestiae fugit qui 
+                quod ut sit, ipsam magnam unde! Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Adipisci eos velit at reiciendis doloribus et delectus 
+                sapiente iure eligendi odio, aspernatur numquam deserunt 
+                id harum nostrum voluptas quia quas animi. Lorem ipsum 
+                dolor sit amet consectetur, adipisicing elit. 
+                Accusantium aut ad officia vel! Tempore adipisci debitis 
+                quasi corrupti molestias maiores est molestiae fugit qui 
+                quod ut sit, ipsam magnam unde!Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Adipisci eos velit at reiciendis doloribus et delectus 
+                sapiente iure eligendi odio, aspernatur numquam deserunt 
+                id harum nostrum voluptas quia quas animi. Lorem ipsum 
+                dolor sit amet consectetur, adipisicing elit. 
+                Accusantium aut ad officia vel! Tempore adipisci debitis 
+                quasi corrupti molestias maiores est molestiae fugit qui 
+                quod ut sit, ipsam magnam unde!
+            </p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                // text.style.marginRight = value * 4 + 'px';
+                // btn.style.marginTop = value * 1.5 + 'px';
+                // header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
